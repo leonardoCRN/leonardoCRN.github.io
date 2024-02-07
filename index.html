@@ -11,6 +11,7 @@
 
     <!-- Librerías -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Hojas de estilo -->
@@ -45,6 +46,7 @@
             <a href="#habilidades" data-section="menu" data-value="item3">Habilidades</a>
             <a href="#formacion" data-section="menu" data-value="item4">Formación</a>
             <a href="#proyectos" data-section="menu" data-value="item5">Proyectos</a>
+            <a href="#experiencia" data-section="menu" data-value="item5">Experiencia</a>
             <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
 
             <!-- Idiomas de la página -->
@@ -230,7 +232,7 @@
 
                 <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     <a href="./assets/docs/MS Project.pdf" target="_blank">
-                    <img class="logo-unal" src="./assets/images/incesp.png" alt="Logo - incesp">
+                    <img class="logo-unal" src="./assets/images/incesp.PNG" alt="Logo - incesp">
                     </a>
                     <div class="container_texto--formacion">
                         <p data-section="formacion" data-value="formacion1">MS Project Aplicado a la Gestión de Proyectos</p>
@@ -398,31 +400,64 @@
         <!-- Experiencia Laboral -->
         <section class="experiencia" id="experiencia">
             <h1 data-section="experiencia" data-value="title" data-aos="fade-up">Experiencia Laboral</h1>
+            
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-item active">
+                            <div class="cards_container--proyectos">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="./assets/images/LOGO_UNDAR1.png" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">UNDAR</h5>
+                                      <h6 class="card-title">2023-Actualidad</h6>
+                                        <p class="card-text">◉ Monitoreo del uso de la plataforma web.</p>
+                                        <p class="card-text">◉ Administración de la plataforma de los docentes.</p>
+                                        <p class="card-text">◉ Reportes estadísticos con uso de la base de datos.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
+                  <div class="carousel-item">    
+                    <div class="cards_container--proyectos">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./assets/images/dgaray.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">D'Garay</h5>
+                                  <h6 class="card-title">Mayo 2020-Abril 2021</h6>
+                                    <p class="card-text">◉ Administración del punto de venta.</p>
+                                    <p class="card-text">◉ Gestión de pedidos.</p>
+                                    <p class="card-text">◉ Gestión y organización de plataforma y publicidad.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                    </div>               
+                                       
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-            </div>
         </section>
 
         <!-- Contacto -->
@@ -499,5 +534,6 @@
 
     <!-- Mi script -->
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
